@@ -22,7 +22,6 @@ public class Scavenge extends CustomCard {
     private static final int DMG = 10;
     private static final int UPGRADE_PLUS_DMG = 3;
     private static final int GAIN = 1;
-    private static final int POOL = 1;
     
     public Scavenge() {
     	super(ID, NAME, IMG_PATH, COST, DESCRIPTION,

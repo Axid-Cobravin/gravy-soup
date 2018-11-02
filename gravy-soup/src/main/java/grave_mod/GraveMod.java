@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 
 import basemod.BaseMod;
+import basemod.animations.AbstractAnimation;
+import basemod.animations.AbstractAnimation.Type;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
 

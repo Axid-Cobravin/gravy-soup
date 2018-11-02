@@ -20,7 +20,6 @@ public class SplitDecision extends CustomCard implements ModalChoice.Callback {
     public static final String NAME = "Split Decision";
     public static final String DESCRIPTION = "Deal !D! damage. Gain !B! block. Divergent.";
     private static final int COST = 2;
-    private static final int POOL = 1;
     private static final int DMG = 5;
     private static final int BLOCK = 5;
     private static final int UPGRADE = 2;

@@ -3,6 +3,7 @@ package grave_mod;
 import java.util.ArrayList;
 
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
@@ -15,12 +16,14 @@ import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.ui.panels.energyorb.EnergyOrbBlue;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import com.megacrit.cardcrawl.helpers.ScreenShake;
 
 import basemod.abstracts.CustomPlayer;
+import basemod.animations.AbstractAnimation;
 import grave_mod.GraveMod;
 import grave_mod.cards.Multitask;
 
@@ -41,10 +44,18 @@ public class Grave extends CustomPlayer {
     public static final String GRAVE_SKELETON_ATLAS = GraveMod.makePath(HYDRA_SKELETON_ATLAS); // spine animation atlas
     public static final String GRAVE_MODEL = GraveMod.makePath(HYDRA_MODEL); // full model
     public static final String GRAVE_SKELETON_JSON = GraveMod.makePath(HYDRA_SKELETON_JSON); // spine animation json
+    
+    //Temporary animation type
+    public static class TempAnimation extends AbstractAnimation {
+
+        @Override
+        public Type type() {
+            return AbstractAnimation.Type.NONE;
+        }
+    }
 
     public Grave(String name) {
-        super(NAME, EnumPatch.HYDRA, new EnergyOrbBlue(), GRAVE_SKELETON_ATLAS, GRAVE_SKELETON_JSON);
-        //super(name, EnumPatch.HYDRA, new EnergyOrbBlue(), (AbstractAnimation)null); // constructor with null animation
+        super(NAME, EnumPatch.HYDRA, new EnergyOrbBlue(), new TempAnimation());
 
         this.dialogX = (this.drawX + 0.0F * Settings.scale); // set location for text bubbles
         this.dialogY = (this.drawY + 220.0F * Settings.scale); // you can just copy these values
@@ -184,6 +195,11 @@ public class Grave extends CustomPlayer {
     @Override
     public AbstractPlayer newInstance() {
         return new Grave(this.name);
+    }
+    
+    @Override
+    public Texture getEnergyImage() {
+        return ImageMaster.BLUE_ORB_FLASH_VFX;
     }
 
 }
