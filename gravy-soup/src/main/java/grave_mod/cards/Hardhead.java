@@ -19,12 +19,11 @@ extends CustomCard {
     private static final int BLOCK = 3;
     private static final int TIMES = 3;
     private static final int UPGRADE_PLUS_TIMES = 1;
-    private static final int POOL = 1;
 
     public Hardhead() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.SKILL, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF, POOL);
+        		AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF);
         this.baseBlock = BLOCK;
         this.baseMagicNumber = TIMES;
         this.magicNumber = this.baseMagicNumber;

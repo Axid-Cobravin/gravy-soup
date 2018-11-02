@@ -20,12 +20,11 @@ extends CustomCard {
     private static final int ATTACK_DMG = 28;
     private static final int UPGRADE_PLUS_DMG = 6;
     private static final int SELF_DMG = 5;
-    private static final int POOL = 1;
 
     public Onslaught() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.ATTACK, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY, POOL);
+        		AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
         this.baseDamage = ATTACK_DMG;
         this.baseMagicNumber = SELF_DMG;
         this.magicNumber = this.baseMagicNumber;

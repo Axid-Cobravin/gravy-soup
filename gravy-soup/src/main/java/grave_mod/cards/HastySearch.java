@@ -22,12 +22,11 @@ extends CustomCard {
     private static final int COST_UPGRADE = 0;
     private static final int DRAW = 3;
     private static final int VULNERABLE = 2;
-    private static final int POOL = 1;
 
     public HastySearch() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.SKILL, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF, POOL);
+        		AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
     }
 
     @Override

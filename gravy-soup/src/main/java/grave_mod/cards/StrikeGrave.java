@@ -22,12 +22,11 @@ extends CustomCard {
     private static final int UPGRADE_PLUS_DMG = 4;
     private static final int SELF_DMG = 1;
     private static final int UPGRADE_PLUS_SELF_DMG = 1;
-    private static final int POOL = 1;
 
     public StrikeGrave() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.ATTACK, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ENEMY, POOL);
+        		AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ENEMY);
         this.baseDamage = ATTACK_DMG;
         this.baseMagicNumber = SELF_DMG;
         this.magicNumber = this.baseMagicNumber;

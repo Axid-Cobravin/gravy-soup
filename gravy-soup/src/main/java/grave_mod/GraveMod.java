@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 
 import basemod.BaseMod;
@@ -70,12 +71,16 @@ public class GraveMod implements EditCardsSubscriber, EditCharactersSubscriber
     public static void initialize()
     {
 		BaseMod.addColor(
-				EnumPatch.CYAN.toString(), 
+				EnumPatch.CYAN, 
 				CYAN, CYAN, CYAN, CYAN, CYAN, CYAN, CYAN, 
-				makePath(ATTACK_BLUE), makePath(SKILL_BLUE),
-				makePath(POWER_BLUE), makePath(ENERGY_ORB_BLUE), 
-				makePath(ATTACK_BLUE_PORTRAIT), makePath(SKILL_BLUE_PORTRAIT),
-				makePath(POWER_BLUE_PORTRAIT), makePath(ENERGY_ORB_BLUE_PORTRAIT)
+				makePath(ATTACK_BLUE),
+				makePath(SKILL_BLUE),
+				makePath(POWER_BLUE),
+				makePath(ENERGY_ORB_BLUE), 
+				makePath(ATTACK_BLUE_PORTRAIT),
+				makePath(SKILL_BLUE_PORTRAIT),
+				makePath(POWER_BLUE_PORTRAIT),
+				makePath(ENERGY_ORB_BLUE_PORTRAIT)
 		);
     	
         GraveMod gm = new GraveMod();
@@ -100,11 +105,12 @@ public class GraveMod implements EditCardsSubscriber, EditCharactersSubscriber
     }
 
 	@Override
-	public void receiveEditCharacters() {
-
-		BaseMod.addCharacter(Grave.class, "#bGrave", 
-				"Grave class string", EnumPatch.CYAN.toString(), 
-				"Grave", makePath(HYDRA_BUTTON), makePath(HYDRA_PORTRAIT), 
-				EnumPatch.HYDRA.toString());
+	public void receiveEditCharacters()
+	{
+		BaseMod.addCharacter(
+		        new Grave(CardCrawlGame.playerName), 
+				makePath(HYDRA_BUTTON),
+				makePath(HYDRA_PORTRAIT), 
+				EnumPatch.HYDRA);
 	}
 }

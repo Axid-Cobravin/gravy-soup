@@ -20,12 +20,11 @@ extends CustomCard {
     private static final int COST = 0;
     private static final int ATTACK_DMG = 18;
     private static final int ATTACK_PLUS_UPGRADE_DMG = 6;
-    private static final int POOL = 1;
     
     public GutsyBite() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.ATTACK, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY, POOL);
+        		AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
         this.baseDamage = ATTACK_DMG;
     }
 

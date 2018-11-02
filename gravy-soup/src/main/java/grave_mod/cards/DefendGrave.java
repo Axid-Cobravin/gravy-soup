@@ -6,9 +6,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import basemod.abstracts.CustomCard;
 import grave_mod.EnumPatch;
 
-public class DefendGrave extends AbstractCard {
+public class DefendGrave extends CustomCard {
 	
     public static final String ID = "Defend_Grave";
     public static final String NAME = "Defend";
@@ -17,12 +18,11 @@ public class DefendGrave extends AbstractCard {
     private static final int COST = 1;
     private static final int BLOCK = 6;
     private static final int UPGRADE_PLUS_BLOCK = 2;
-    private static final int POOL = 1;
     
     public DefendGrave() {
     	super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.SKILL, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF, POOL);
+        		AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.SELF);
         this.baseBlock = BLOCK;
     }
 

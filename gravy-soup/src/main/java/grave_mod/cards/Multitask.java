@@ -24,12 +24,11 @@ extends CustomCard {
     private static final int COST = 2;
     private static final int MIRRORED_VALUE = 1;
     private static final int UPGRADE_PLUS_MIRRORED_VALUE = 1;
-    private static final int POOL = 1;
 
     public Multitask() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.SKILL, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ALL, POOL);
+        		AbstractCard.CardRarity.BASIC, AbstractCard.CardTarget.ALL);
         this.baseMagicNumber = MIRRORED_VALUE;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;

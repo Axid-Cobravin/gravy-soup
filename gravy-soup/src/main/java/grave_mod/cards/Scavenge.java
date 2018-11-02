@@ -9,9 +9,10 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import basemod.abstracts.CustomCard;
 import grave_mod.EnumPatch;
 
-public class Scavenge extends AbstractCard {
+public class Scavenge extends CustomCard {
 	
     public static final String ID = "Scavenge";
     public static final String NAME = "Scavenge";
@@ -26,7 +27,7 @@ public class Scavenge extends AbstractCard {
     public Scavenge() {
     	super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.ATTACK, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY, POOL);
+        		AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
         this.baseDamage = DMG;
         this.baseMagicNumber = GAIN;
         this.magicNumber = this.baseMagicNumber;

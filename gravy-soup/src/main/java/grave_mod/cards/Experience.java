@@ -20,12 +20,11 @@ extends CustomCard {
     private static final int COST = 2;
     private static final int MIRRORED = 1;
     private static final int MIRRORED_PLUS_UPGRADE = 1;
-    private static final int POOL = 1;
 
     public Experience() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.POWER, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF, POOL);
+        		AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF);
         this.baseMagicNumber = MIRRORED;
         this.magicNumber = this.baseMagicNumber;
     }

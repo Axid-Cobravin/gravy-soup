@@ -23,12 +23,11 @@ extends CustomCard {
     private static final int UPGRADE_PLUS_DMG = 2;
     private static final int WEAK_LEVEL = 1;
     private static final int UPGRADE_PLUS_WEAK_LEVEL = 1;
-    private static final int POOL = 1;
 
     public TailSwipe() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.ATTACK, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ALL_ENEMY, POOL);
+        		AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ALL_ENEMY);
         this.baseDamage = ATTACK_DMG;
         this.baseMagicNumber = WEAK_LEVEL;
         this.magicNumber = this.baseMagicNumber;

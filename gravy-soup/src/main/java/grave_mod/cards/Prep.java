@@ -9,9 +9,10 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
 
+import basemod.abstracts.CustomCard;
 import grave_mod.EnumPatch;
 
-public class Prep extends AbstractCard {
+public class Prep extends CustomCard {
 	
     public static final String ID = "Prep";
     public static final String NAME = "Prep";
@@ -20,12 +21,11 @@ public class Prep extends AbstractCard {
     private static final int COST = 1;
     private static final int GAIN = 1;
     private static final int UPGRADE_PLUS_GAIN = 1;
-    private static final int POOL = 1;
     
     public Prep() {
     	super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.SKILL, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF, POOL);
+        		AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF);
         this.baseMagicNumber = GAIN;
         this.magicNumber = this.baseMagicNumber;
     }

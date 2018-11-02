@@ -27,7 +27,7 @@ public class SplitDecision extends CustomCard implements ModalChoice.Callback {
     private ModalChoice modal;
 
     public SplitDecision() {
-        super(ID, NAME, null, COST, DESCRIPTION, CardType.ATTACK, EnumPatch.CYAN, CardRarity.UNCOMMON, CardTarget.ENEMY, POOL);
+        super(ID, NAME, null, COST, DESCRIPTION, CardType.ATTACK, EnumPatch.CYAN, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
         this.baseDamage = DMG;
         this.baseBlock = BLOCK;
@@ -58,7 +58,7 @@ public class SplitDecision extends CustomCard implements ModalChoice.Callback {
 
     // This is called when one of the option cards us chosen
     @Override
-    public void optionSelected(int i) {
+    public void optionSelected(AbstractPlayer p, AbstractMonster m, int i) {
        int damageBlock;
         switch (i) {
             case 0:
