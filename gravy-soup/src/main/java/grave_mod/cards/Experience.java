@@ -11,30 +11,28 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import basemod.abstracts.CustomCard;
 import grave_mod.EnumPatch;
 
-public class Experience
-extends CustomCard {
+public class Experience extends CustomCard {
     public static final String ID = "Experience";
     public static final String NAME = "Experience";
-    public static final String DESCRIPTION = "Gain !M! strength and !M! dexterity.";
+    public static final String DESCRIPTION = "Gain !M! strength and !M! dexterity. NL Can be upgraded any number of times.";
     public static final String IMG_PATH = null;
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int MIRRORED = 1;
     private static final int MIRRORED_PLUS_UPGRADE = 1;
 
     public Experience() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
-        		AbstractCard.CardType.POWER, EnumPatch.CYAN,
-        		AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF);
+        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, AbstractCard.CardType.POWER, EnumPatch.CYAN,
+                AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF);
         this.baseMagicNumber = MIRRORED;
         this.magicNumber = this.baseMagicNumber;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, 
-        		this.magicNumber), this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, 
-        		this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager
+                .addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager
+                .addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
 
     }
 
@@ -44,14 +42,14 @@ extends CustomCard {
     }
 
     public void upgrade() {
-    	upgradeMagicNumber(MIRRORED_PLUS_UPGRADE);
-    	this.upgraded = true;
-    	this.timesUpgraded++;
-    	this.name = (NAME + "+" + this.timesUpgraded);
-    	initializeTitle();
+        upgradeMagicNumber(MIRRORED_PLUS_UPGRADE);
+        this.upgraded = true;
+        this.timesUpgraded++;
+        this.name = (NAME + "+" + this.timesUpgraded);
+        initializeTitle();
     }
-    
+
     public boolean canUpgrade() {
-    	return true;
+        return true;
     }
 }

@@ -12,7 +12,7 @@ import grave_mod.EnumPatch;
 
 public class GutsyBite
 extends CustomCard {
-    public static final String ID = "Gutsy Bite";
+    public static final String ID = "Gutsy_Bite";
     public static final String NAME = "Gutsy Bite";
     public static final String DESCRIPTION = "If you have half HP or less, deal !D! damage.";
     public static final String EXTENDED_DESCRIPTION = "I can't play this card.";

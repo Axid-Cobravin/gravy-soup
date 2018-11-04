@@ -14,7 +14,7 @@ import grave_mod.EnumPatch;
 
 public class HastySearch
 extends CustomCard {
-    public static final String ID = "Hasty Search";
+    public static final String ID = "Hasty_Search";
     public static final String NAME = "Hasty Search";
     public static final String DESCRIPTION = "Draw 3 cards. Gain 2 Vulnerable.";
     public static final String IMG_PATH = null;

@@ -14,7 +14,7 @@ import grave_mod.EnumPatch;
 
 public class TailSwipe
 extends CustomCard {
-    public static final String ID = "Tail Swipe";
+    public static final String ID = "Tail_Swipe";
     public static final String NAME = "Tail Swipe";
     public static final String DESCRIPTION = "Deal !D! damage and apply !M! weak to all enemies.";
     public static final String IMG_PATH = null;

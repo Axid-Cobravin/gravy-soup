@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.IronWaveEffect;
 
 public class SplitDecision extends CustomCard implements ModalChoice.Callback {
-    public static final String ID = "Split Decision";
+    public static final String ID = "Split_Decision";
     public static final String NAME = "Split Decision";
     public static final String DESCRIPTION = "Deal !D! damage. Gain !B! block. Divergent.";
     private static final int COST = 2;
