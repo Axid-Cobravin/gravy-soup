@@ -1,0 +1,8 @@
+{
+	"modid": "gravethehydra-sts",
+	"name": "Grave The Hydra",
+	"author_list": ["Axid_Cobravin"],
+	"description": "Adds Grave the Hydra as a new playable character.",
+	"dependencies": ["basemod"],
+	"version": "0.0.1"
+}

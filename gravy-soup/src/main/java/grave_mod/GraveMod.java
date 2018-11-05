@@ -9,8 +9,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 
 import basemod.BaseMod;
-import basemod.animations.AbstractAnimation;
-import basemod.animations.AbstractAnimation.Type;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
 
@@ -34,10 +32,6 @@ public class GraveMod implements EditCardsSubscriber, EditCharactersSubscriber
 {
 
 	public static final Logger logger = LogManager.getLogger(GraveMod.class.getName());
-	
-	private static final String MODNAME = "GraveMod";
-	private static final String AUTHOR = "Axid";
-	private static final String DESCRIPTION = "v0.0.1\n Adds Grave, the Hydra as a playable character";
 	
 	public static final Color CYAN = CardHelper.getColor(0.0f, 200.0f, 200.0f);
 	public static final String GRAVEMOD_ASSETS_FOLDER = "grave_mod/resources/img";
@@ -84,7 +78,8 @@ public class GraveMod implements EditCardsSubscriber, EditCharactersSubscriber
 				makePath(POWER_BLUE_PORTRAIT),
 				makePath(ENERGY_ORB_BLUE_PORTRAIT)
 		);
-    	
+		
+        @SuppressWarnings("unused")
         GraveMod gm = new GraveMod();
     }
 
