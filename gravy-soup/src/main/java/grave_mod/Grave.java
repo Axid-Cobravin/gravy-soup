@@ -29,12 +29,13 @@ import grave_mod.cards.Multitask;
 
 public class Grave extends CustomPlayer {
 
-    public static final String HYDRA_SHOULDER_1 = "crowbot/shoulder.png";
-    public static final String HYDRA_SHOULDER_2 = "crowbot/shoulder.png";
-    public static final String HYDRA_CORPSE = "crowbot/corpse.png";
-    public static final String HYDRA_SKELETON_ATLAS = "crowbot/idle/skeleton.atlas";
-    public static final String HYDRA_MODEL = "crowbot/main.png";
-    public static final String HYDRA_SKELETON_JSON = "crowbot/idle/skeleton.json";
+    public static final String HYDRA_SHOULDER_1 = "hydra/shoulder.png";
+    public static final String HYDRA_SHOULDER_2 = "hydra/shoulder2.png";
+    public static final String HYDRA_CORPSE = "hydra/corpse.png";
+    public static final String HYDRA_SKELETON_ATLAS = "hydra/idle/skeleton.atlas";
+    public static final String HYDRA_SKELETON_JSON = "hydra/idle/skeleton.json";
+//    public static final String HYDRA_SKELETON_ATLAS = "hydra/idle/dbones/skeleton_tex.json";
+//    public static final String HYDRA_SKELETON_JSON = "hydra/idle/dbones/skeleton_ske.json";
     public static final String NAME = "Grave";
 
     public static final int ENERGY_PER_TURN = 3; // how much energy you get every turn
@@ -42,7 +43,6 @@ public class Grave extends CustomPlayer {
     public static final String GRAVE_SHOULDER_1 = GraveMod.makePath(HYDRA_SHOULDER_1); // another campfire pose
     public static final String GRAVE_CORPSE = GraveMod.makePath(HYDRA_CORPSE); // dead corpse
     public static final String GRAVE_SKELETON_ATLAS = GraveMod.makePath(HYDRA_SKELETON_ATLAS); // spine animation atlas
-    public static final String GRAVE_MODEL = GraveMod.makePath(HYDRA_MODEL); // full model
     public static final String GRAVE_SKELETON_JSON = GraveMod.makePath(HYDRA_SKELETON_JSON); // spine animation json
     
     //Temporary animation type

@@ -36,21 +36,23 @@ public class GraveMod implements EditCardsSubscriber, EditCharactersSubscriber
 	public static final Color CYAN = CardHelper.getColor(0.0f, 200.0f, 200.0f);
 	public static final String GRAVEMOD_ASSETS_FOLDER = "grave_mod/resources/img";
 	
-    private static final String HYDRA_BUTTON = "crowbot/crowbotButton.png";
-    private static final String HYDRA_PORTRAIT = "crowbot/silentPortrait.jpg";
-    public static final String HYDRA_SHOULDER_1 = "crowbot/shoulder.png";
-    public static final String HYDRA_SHOULDER_2 = "crowbot/shoulder.png";
-    public static final String HYDRA_CORPSE = "crowbot/corpse.png";
-    public static final String HYDRA_SKELETON_ATLAS = "crowbot/idle/skeleton.atlas";
-    public static final String HYDRA_SKELETON_JSON = "crowbot/idle/skeleton.json";
+    private static final String HYDRA_BUTTON = "hydra/dragon_button.png";
+    private static final String HYDRA_PORTRAIT = "hydra/space_dragon_portrait.png";
+    public static final String HYDRA_SHOULDER_1 = "hydra/shoulder.png";
+    public static final String HYDRA_SHOULDER_2 = "hydra/shoulder.png";
+    public static final String HYDRA_CORPSE = "hydra/corpse.png";
+    public static final String HYDRA_SKELETON_ATLAS = "hydra/idle/skeleton.atlas";
+    public static final String HYDRA_SKELETON_JSON = "hydra/idle/skeleton.json";
+//    public static final String HYDRA_SKELETON_ATLAS = "hydra/idle/dbones/skeleton_tex.json";
+//    public static final String HYDRA_SKELETON_JSON = "hydra/idle/dbones/skeleton_ske.json";
     
 	// card backgrounds
-	private static final String ATTACK_BLUE = "bg/bg_attack_blue.png";
+	private static final String ATTACK_BLUE = "bg/bg_attack_BWswirl.png";
 	private static final String SKILL_BLUE = "bg/bg_skill_blue.png";
 	private static final String POWER_BLUE = "bg/bg_power_blue.png";
 	private static final String ENERGY_ORB_BLUE = "bg/card_blue_orb.png";
 	
-	private static final String ATTACK_BLUE_PORTRAIT = "bg/bg_attack_colorless.png";
+	private static final String ATTACK_BLUE_PORTRAIT = "bg/bg_attack_BWswirl_p.png";
 	private static final String SKILL_BLUE_PORTRAIT = "bg/bg_skill_colorless.png";
     private static final String POWER_BLUE_PORTRAIT = "bg/bg_power_colorless.png";
     private static final String ENERGY_ORB_BLUE_PORTRAIT = "bg/card_colorless_orb.png";

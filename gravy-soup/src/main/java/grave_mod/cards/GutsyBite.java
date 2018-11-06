@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import basemod.abstracts.CustomCard;
 import grave_mod.EnumPatch;
+import grave_mod.GraveMod;
 
 public class GutsyBite
 extends CustomCard {
@@ -16,13 +17,14 @@ extends CustomCard {
     public static final String NAME = "Gutsy Bite";
     public static final String DESCRIPTION = "If you have half HP or less, deal !D! damage.";
     public static final String EXTENDED_DESCRIPTION = "I can't play this card.";
-    public static final String IMG_PATH = null;
+    public static final String IMG_PATH = "cards/gutsy_bite_p.png";
+    public static final String IMG_PATH_SMALL = "cards/gutsy_bite.png";
     private static final int COST = 0;
     private static final int ATTACK_DMG = 18;
     private static final int ATTACK_PLUS_UPGRADE_DMG = 6;
     
     public GutsyBite() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
+        super(ID, NAME, GraveMod.makePath(IMG_PATH_SMALL), COST, DESCRIPTION,
         		AbstractCard.CardType.ATTACK, EnumPatch.CYAN,
         		AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.ENEMY);
         this.baseDamage = ATTACK_DMG;
