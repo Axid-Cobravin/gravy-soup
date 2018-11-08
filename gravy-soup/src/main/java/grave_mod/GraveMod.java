@@ -43,9 +43,9 @@ public class GraveMod implements EditCardsSubscriber, EditCharactersSubscriber
     private static final String HYDRA_PORTRAIT = "hydra/space_dragon_portrait.png";
     public static final String HYDRA_SHOULDER_1 = "hydra/shoulder.png";
     public static final String HYDRA_SHOULDER_2 = "hydra/shoulder.png";
-    public static final String HYDRA_CORPSE = "hydra/corpse.png";
-    public static final String HYDRA_SKELETON_ATLAS = "hydra/idle/skeleton.atlas";
-    public static final String HYDRA_SKELETON_JSON = "hydra/idle/skeleton.json";
+//    public static final String HYDRA_CORPSE = "hydra/corpse.png";
+//    public static final String HYDRA_SKELETON_ATLAS = "hydra/idle/skeleton.atlas";
+//    public static final String HYDRA_SKELETON_JSON = "hydra/idle/skeleton.json";
 //    public static final String HYDRA_SKELETON_ATLAS = "hydra/idle/dbones/skeleton_tex.json";
 //    public static final String HYDRA_SKELETON_JSON = "hydra/idle/dbones/skeleton_ske.json";
     
