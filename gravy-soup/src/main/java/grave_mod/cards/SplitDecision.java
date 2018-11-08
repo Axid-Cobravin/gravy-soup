@@ -58,25 +58,17 @@ public class SplitDecision extends CustomCard implements ModalChoice.Callback {
     // This is called when one of the option cards us chosen
     @Override
     public void optionSelected(AbstractPlayer p, AbstractMonster m, int i) {
-       int damageBlock;
         switch (i) {
             case 0:
-                damageBlock = 0;
+                this.upgradeDamage(UPGRADE);
                 break;
             case 1:
-                damageBlock = 1;
+                this.upgradeBlock(UPGRADE);
                 break;
             default:
                 return;
         }
 
-        if (damageBlock == 0) {
-        	this.upgradeDamage(UPGRADE);
-        	
-        }
-        if (damageBlock == 1) {
-        	this.upgradeBlock(UPGRADE);
-        }
     	this.upgraded = true;
     	this.timesUpgraded++;
     	this.name = (NAME + "+" + this.timesUpgraded);
@@ -87,6 +79,8 @@ public class SplitDecision extends CustomCard implements ModalChoice.Callback {
     public void upgrade()
     {
         if (!upgraded) {
+            this.upgradeDamage(UPGRADE);
+            this.upgradeBlock(UPGRADE);
             upgradeName();
         }
     }

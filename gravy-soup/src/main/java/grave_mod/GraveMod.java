@@ -14,6 +14,7 @@ import basemod.interfaces.EditCharactersSubscriber;
 
 import grave_mod.Grave;
 import grave_mod.cards.DefendGrave;
+import grave_mod.cards.Divide;
 import grave_mod.cards.Experience;
 import grave_mod.cards.GutsyBite;
 import grave_mod.cards.Hardhead;
@@ -26,6 +27,8 @@ import grave_mod.cards.SplitDecision;
 import grave_mod.cards.StrikeGrave;
 import grave_mod.cards.TailSwipe;
 import grave_mod.EnumPatch;
+
+import grave_mod.CustomTwoMagicCard;
 
 @SpireInitializer
 public class GraveMod implements EditCardsSubscriber, EditCharactersSubscriber
@@ -88,6 +91,8 @@ public class GraveMod implements EditCardsSubscriber, EditCharactersSubscriber
     @Override
     public void receiveEditCards()
     {
+        BaseMod.addDynamicVariable(new CustomTwoMagicCard.SecondMagicNumber());
+        
         BaseMod.addCard(new StrikeGrave());
         BaseMod.addCard(new DefendGrave());
         BaseMod.addCard(new TailSwipe());
@@ -100,7 +105,7 @@ public class GraveMod implements EditCardsSubscriber, EditCharactersSubscriber
         BaseMod.addCard(new SplitDecision());
         BaseMod.addCard(new Scavenge());
         BaseMod.addCard(new Prep());
-
+        BaseMod.addCard(new Divide());
     }
 
 	@Override
