@@ -69,7 +69,6 @@ public class SplitDecision extends CustomCard implements ModalChoice.Callback {
                 return;
         }
 
-    	this.upgraded = true;
     	this.timesUpgraded++;
     	this.name = (NAME + "+" + this.timesUpgraded);
     	initializeTitle();
@@ -81,7 +80,11 @@ public class SplitDecision extends CustomCard implements ModalChoice.Callback {
         if (!upgraded) {
             this.upgradeDamage(UPGRADE);
             this.upgradeBlock(UPGRADE);
-            upgradeName();
+            upgradeName(); // also increments timesUpgraded
+            this.upgraded = true;
+            this.timesUpgraded ++;
+            this.name = (NAME + "+" + this.timesUpgraded);
+            initializeTitle();   
         }
     }
 

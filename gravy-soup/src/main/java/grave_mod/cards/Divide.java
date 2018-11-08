@@ -22,8 +22,8 @@ public class Divide extends CustomTwoMagicCard implements ModalChoice.Callback {
     private static final int HP_LOSS_BASE = 6;
     private static final int INCREASE_STR = 1;
     private static final int DECREASE_HP_LOSS = -2;
-    private static final int UP_INCREASE_STR = 1;
-    private static final int UP_DECREASE_HP_LOSS = -2;
+//    private static final int UP_INCREASE_STR = 1;
+//    private static final int UP_DECREASE_HP_LOSS = -2;
     private ModalChoice modal;
 
     public Divide() {
@@ -68,7 +68,6 @@ public class Divide extends CustomTwoMagicCard implements ModalChoice.Callback {
             this.upgradeMagicNumber(INCREASE_STR);
         }
 
-        this.upgraded = true;
         this.timesUpgraded++;
         this.name = (NAME + "+" + this.timesUpgraded);
         initializeTitle();
@@ -79,7 +78,11 @@ public class Divide extends CustomTwoMagicCard implements ModalChoice.Callback {
         if (!upgraded) {
             this.upgradeMagicNumber(INCREASE_STR);
             this.upgradeSecondMagicNumber(DECREASE_HP_LOSS);
-            upgradeName();
+            upgradeName(); // also increments timesUpgraded
+            this.upgraded = true;
+            this.timesUpgraded ++;
+            this.name = (NAME + "+" + this.timesUpgraded);
+            initializeTitle();   
         }
     }
 
