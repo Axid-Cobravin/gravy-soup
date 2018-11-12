@@ -27,7 +27,7 @@ public class Divide extends CustomTwoMagicCard implements ModalChoice.Callback {
     private ModalChoice modal;
 
     public Divide() {
-        super(ID, NAME, null, COST, DESCRIPTION, CardType.ATTACK, EnumPatch.CYAN, CardRarity.UNCOMMON,
+        super(ID, NAME, null, COST, DESCRIPTION, CardType.SKILL, EnumPatch.CYAN, CardRarity.UNCOMMON,
                 CardTarget.ENEMY);
 
         this.baseMagicNumber = STR_GAIN_BASE;
