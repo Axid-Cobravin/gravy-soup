@@ -15,7 +15,7 @@ public class GutsyBite
 extends CustomCard {
     public static final String ID = "Gutsy_Bite";
     public static final String NAME = "Gutsy Bite";
-    public static final String DESCRIPTION = "If you have half HP or less, deal !D! Damage.";
+    public static final String DESCRIPTION = "If you have half HP or less, deal !D! damage.";
     public static final String EXTENDED_DESCRIPTION = "I can't play this card.";
     public static final String IMG_PATH = "cards/gutsy_bite_p.png";
     public static final String IMG_PATH_SMALL = "cards/gutsy_bite.png";

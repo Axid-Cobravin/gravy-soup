@@ -18,7 +18,7 @@ public class Scavenge extends CustomCard {
 
     public static final String ID = "Scavenge";
     public static final String NAME = "Scavenge";
-    public static final String DESCRIPTION = "Deal !D! Damage. If it kills an enemy, draw 1 card and gain [E].";
+    public static final String DESCRIPTION = "Deal !D! damage. If it kills an enemy, draw 1 card and gain [E].";
     public static final String IMG_PATH = null;
     private static final int COST = 1;
     private static final int DMG = 10;

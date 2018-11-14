@@ -3,7 +3,9 @@ package grave_mod.cards;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import basemod.abstracts.CustomCard;
@@ -11,9 +13,10 @@ import grave_mod.EnumPatch;
 
 public class DefendGrave extends CustomCard {
 	
-    public static final String ID = "Defend_Grave";
-    public static final String NAME = "Defend";
-    public static final String DESCRIPTION = "Gain !B! Block.";
+    public static final String ID = "graveMod:Defend_Grave";
+    public static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String NAME = CARD_STRINGS.NAME;
+    public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     public static final String IMG_PATH = null;
     private static final int COST = 1;
     private static final int BLOCK = 6;

@@ -1,0 +1,12 @@
+{
+	"graveMod:Defend_Grave": 
+	{
+		"NAME": "Defend",
+		"DESCRIPTION": "Gain !B! Block."
+	},
+	"graveMod:Strike_Grave": 
+	{
+		"NAME": "Strike",
+		"DESCRIPTION": "Deal !D! damage."
+	}
+}
