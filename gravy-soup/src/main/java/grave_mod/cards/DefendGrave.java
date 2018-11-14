@@ -13,7 +13,7 @@ public class DefendGrave extends CustomCard {
 	
     public static final String ID = "Defend_Grave";
     public static final String NAME = "Defend";
-    public static final String DESCRIPTION = "Gain !B! block.";
+    public static final String DESCRIPTION = "Gain !B! Block.";
     public static final String IMG_PATH = null;
     private static final int COST = 1;
     private static final int BLOCK = 6;

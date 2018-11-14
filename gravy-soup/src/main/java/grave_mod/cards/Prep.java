@@ -15,7 +15,8 @@ public class Prep extends CustomCard {
 	
     public static final String ID = "Prep";
     public static final String NAME = "Prep";
-    public static final String DESCRIPTION = "Draw !M! card and gain !M! energy next turn.";
+    public static final String DESCRIPTION = "Draw !M! card and gain [E] next turn.";
+    public static final String UPGRADE_DESCRIPTION = "Draw !M! cards and gain [E][E] energy next turn.";
     public static final String IMG_PATH = null;
     private static final int COST = 1;
     private static final int GAIN = 1;
@@ -25,6 +26,8 @@ public class Prep extends CustomCard {
     	super(ID, NAME, IMG_PATH, COST, DESCRIPTION,
         		AbstractCard.CardType.SKILL, EnumPatch.CYAN,
         		AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF);
+    	this.rawDescription = DESCRIPTION;
+        this.initializeDescription();
         this.baseMagicNumber = GAIN;
         this.magicNumber = this.baseMagicNumber;
     }
@@ -45,6 +48,8 @@ public class Prep extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_GAIN);
+            this.rawDescription = UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 }

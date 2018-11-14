@@ -18,8 +18,8 @@ public class Multitask
 extends CustomCard {
     public static final String ID = "Multitask";
     public static final String NAME = "Multitask";
-    public static final String DESCRIPTION = "Apply !M! weak and !M! vulnerable to all enemies. Gain !M! " +
-    		"strength and !M! dexterity. NL Exhaust.";
+    public static final String DESCRIPTION = "Apply !M! Weak and !M! Vulnerable to all enemies. Gain !M! " +
+    		"Strength and !M! Dexterity. NL Exhaust.";
     public static final String IMG_PATH = null;
     private static final int COST = 2;
     private static final int MIRRORED_VALUE = 1;

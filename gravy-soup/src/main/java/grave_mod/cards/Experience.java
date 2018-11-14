@@ -14,7 +14,7 @@ import grave_mod.EnumPatch;
 public class Experience extends CustomCard {
     public static final String ID = "Experience";
     public static final String NAME = "Experience";
-    public static final String DESCRIPTION = "Gain !M! strength and !M! dexterity. NL Can be upgraded any number of times.";
+    public static final String DESCRIPTION = "Gain !M! Strength and !M! Dexterity. NL Can be upgraded any number of times.";
     public static final String IMG_PATH = null;
     private static final int COST = 1;
     private static final int MIRRORED = 1;

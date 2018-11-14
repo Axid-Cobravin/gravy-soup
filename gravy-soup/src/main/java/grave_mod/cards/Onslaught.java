@@ -14,7 +14,7 @@ public class Onslaught
 extends CustomCard {
     public static final String ID = "Onslaught";
     public static final String NAME = "Onslaught";
-    public static final String DESCRIPTION = "Deal !D! damage. Lose 5 Max HP.";
+    public static final String DESCRIPTION = "Deal !D! Damage. Lose 5 Max HP.";
     public static final String IMG_PATH = null;
     private static final int COST = 2;
     private static final int ATTACK_DMG = 28;

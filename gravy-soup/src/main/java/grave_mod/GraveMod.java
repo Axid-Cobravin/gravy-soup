@@ -51,12 +51,12 @@ public class GraveMod implements EditCardsSubscriber, EditCharactersSubscriber
     
 	// card backgrounds
 	private static final String ATTACK_BLUE = "bg/bg_attack_BWswirl.png";
-	private static final String SKILL_BLUE = "bg/bg_skill_blue.png";
+	private static final String SKILL_BLUE = "bg/512/bg_skill_BW_waves.png";
 	private static final String POWER_BLUE = "bg/bg_power_blue.png";
 	private static final String ENERGY_ORB_BLUE = "bg/card_blue_orb.png";
 	
 	private static final String ATTACK_BLUE_PORTRAIT = "bg/bg_attack_BWswirl_p.png";
-	private static final String SKILL_BLUE_PORTRAIT = "bg/bg_skill_colorless.png";
+	private static final String SKILL_BLUE_PORTRAIT = "bg/1024/bg_skill_BW_waves_p.png";
     private static final String POWER_BLUE_PORTRAIT = "bg/bg_power_colorless.png";
     private static final String ENERGY_ORB_BLUE_PORTRAIT = "bg/card_colorless_orb.png";
 	

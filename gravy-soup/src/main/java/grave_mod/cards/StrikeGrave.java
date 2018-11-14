@@ -15,7 +15,7 @@ public class StrikeGrave
 extends CustomCard {
     public static final String ID = "Strike_Grave";
     public static final String NAME = "Strike";
-    public static final String DESCRIPTION = "Deal !D! damage. Lose !M! HP.";
+    public static final String DESCRIPTION = "Deal !D! Damage. Lose !M! HP.";
     public static final String IMG_PATH = null;
     private static final int COST = 1;
     private static final int ATTACK_DMG = 8;

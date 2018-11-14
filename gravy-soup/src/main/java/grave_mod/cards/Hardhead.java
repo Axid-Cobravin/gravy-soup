@@ -13,7 +13,7 @@ public class Hardhead
 extends CustomCard {
     public static final String ID = "Hardhead";
     public static final String NAME = "Hardhead";
-    public static final String DESCRIPTION = "Gain !B! block !M! times.";
+    public static final String DESCRIPTION = "Gain !B! Block !M! times.";
     public static final String IMG_PATH = null;
     private static final int COST = 1;
     private static final int BLOCK = 3;

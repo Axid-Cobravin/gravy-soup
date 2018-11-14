@@ -16,7 +16,7 @@ public class TailSwipe
 extends CustomCard {
     public static final String ID = "Tail_Swipe";
     public static final String NAME = "Tail Swipe";
-    public static final String DESCRIPTION = "Deal !D! damage and apply !M! weak to all enemies.";
+    public static final String DESCRIPTION = "Deal !D! Damage and apply !M! Weak to all enemies.";
     public static final String IMG_PATH = null;
     private static final int COST = 1;
     private static final int ATTACK_DMG = 5;
